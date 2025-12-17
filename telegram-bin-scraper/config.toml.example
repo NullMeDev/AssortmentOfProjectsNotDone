@@ -1,0 +1,37 @@
+# BIN Scraper Bot Configuration
+
+# Telegram API credentials (get from https://my.telegram.org)
+api_id = 12345678
+api_hash = "your_api_hash_here"
+phone = "+1234567890"
+session_file = "bin_scraper.session"
+
+# Target channel ID where BINs will be posted
+# Get this by sending /start to @userinfobot with the channel
+target_channel_id = -1001234567890
+
+# Groups to monitor (comma-separated list of group IDs)
+# You can get group IDs using @userinfobot
+monitored_groups = [
+    -1001234567891,
+    -1001234567892,
+    -1001234567893
+]
+
+# Stealth mode: "ghost", "normal", or "aggressive"
+stealth_level = "normal"
+
+# Post style: "clean", "detailed", or "stealth"
+post_style = "clean"
+
+# Minimum confidence score for cards (0.0 to 1.0)
+min_confidence = 0.7
+
+# Only post high-value cards (Visa/MC Gold, Platinum, etc)
+only_high_value = true
+
+# Hours to remember posted cards (avoid duplicates)
+dedupe_hours = 24
+
+# Database path for storing posted cards
+database_path = "bin_scraper.db"
