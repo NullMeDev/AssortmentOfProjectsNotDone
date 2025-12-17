@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+nohup.out
+bot.log
+
+# Configuration files with sensitive data
+config.json
+credentials.json
+.env
+*.key
+*_token.txt
+*_credentials.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Chrome extension temp files
+*.crx
+*.pem
+
+# Node modules (if any)
+node_modules/
+
+# Rust target directory
+target/
+
+# Personal data
+integration/bh_bot.db
+telegram_config.json
+proxy_list.txt
+bin_list.txt
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Screenshots and exports
+*.png
+*.jpg
+*.jpeg
+exports/
+screenshots/
+
+# Keep virtual environment out of repo
+integration/venv/

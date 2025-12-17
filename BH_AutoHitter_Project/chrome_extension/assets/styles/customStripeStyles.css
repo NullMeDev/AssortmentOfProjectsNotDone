@@ -1,0 +1,78 @@
+/* GLOBAL THEME ROOT */
+:root {
+    --stripe-bg-color: #0b0b0f !important;   /* deeper modern black */
+    --stripe-text-light: rgba(255, 255, 255, 0.88);
+    --stripe-text-mid: rgba(255, 255, 255, 0.65);
+    --stripe-text-soft: rgba(255, 255, 255, 0.45);
+    --stripe-border: rgba(255, 255, 255, 0.12);
+}
+
+/* APPLY BACKGROUND EVERYWHERE */
+html, body {
+    background: var(--stripe-bg-color) !important;
+    color: var(--stripe-text-light) !important;
+}
+
+/* Stripe internal “white” override */
+html body {
+    --checkout-white: var(--stripe-bg-color) !important;
+}
+
+/* TEXT COLORS (modern neon-soft tones) */
+.Text-color--gray600 {
+    color: var(--stripe-text-soft) !important;
+}
+
+.Text-color--gray800 {
+    color: var(--stripe-text-mid) !important;
+}
+
+.PaymentHeader,
+.PaymentHeader-Title,
+.PaymentHeader-Subtitle {
+    color: var(--stripe-text-light) !important;
+}
+
+/* MAIN ELEMENT PANE */
+element.style,
+.PaymentSheet,
+.PaymentView,
+.Section,
+.Section-content,
+.Frame,
+.Checkout,
+.Checkout-container {
+    background-color: var(--stripe-bg-color) !important;
+    border-color: var(--stripe-border) !important;
+}
+
+/* LAYOUT FIX (kept your padding + flex logic) */
+element.style {
+    padding: 64px 64px 40px !important;
+    height: 100% !important;
+    overflow-y: auto !important;
+    flex: 0 0 40% !important;
+}
+
+/* INPUT FIELDS LOOK BETTER IN DARK MODE */
+input,
+textarea,
+select {
+    background: rgba(255, 255, 255, 0.07) !important;
+    color: var(--stripe-text-light) !important;
+    border: 1px solid var(--stripe-border) !important;
+}
+
+input::placeholder {
+    color: var(--stripe-text-soft) !important;
+}
+
+/* BUTTONS */
+button {
+    background: rgba(0, 255, 255, 0.12) !important;
+    color: var(--stripe-text-light) !important;
+    border: 1px solid rgba(0, 255, 255, 0.35) !important;
+}
+button:hover {
+    background: rgba(0, 255, 255, 0.22) !important;
+}

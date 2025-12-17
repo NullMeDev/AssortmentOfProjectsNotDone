@@ -1,0 +1,26 @@
+# Python requirements for BH AutoHitter Telegram Bot
+# Install with: pip install -r requirements.txt
+
+# Telegram bot
+python-telegram-bot>=20.0
+telegram
+
+# Async HTTP
+aiohttp>=3.8.0
+aiofiles
+
+# Encryption
+cryptography>=41.0.0
+
+# Database
+aiosqlite
+
+# Utilities
+python-dotenv
+pydantic>=2.0
+loguru
+
+# Optional: For advanced features
+Pillow>=10.0.0  # Image processing for screenshots
+qrcode>=7.4.0  # QR code generation
+numpy>=1.24.0  # Data processing
